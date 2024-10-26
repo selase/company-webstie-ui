@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.074" x2="0" y2="0.069" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1553f"/>
+      <stop offset="1" stop-color="#f1553f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.122" y1="0.15" x2="0.961" y2="0.385" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.516" y1="0.486" x2="0.895" y2="0.806" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="QA_engineers" transform="translate(-259 -1513)">
+    <rect id="Rectangle_5821" data-name="Rectangle 5821" width="48" height="48" transform="translate(307 1513) rotate(90)" fill="rgba(0,0,0,0)" opacity="0"/>
+    <g id="Group_19044" data-name="Group 19044" transform="translate(93 9)">
+      <circle id="Ellipse_1240" data-name="Ellipse 1240" cx="24" cy="24" r="24" transform="translate(166 1504)" opacity="0.2" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_1241" data-name="Ellipse 1241" cx="15.344" cy="15.344" r="15.344" transform="translate(174.656 1512.656)" opacity="0.5" fill="url(#linear-gradient-2)"/>
+      <path id="Intersection_42" data-name="Intersection 42" d="M0,5.563,5.567,0l11.7,11.7a24.164,24.164,0,0,1-5.545,5.584Z" transform="translate(192.31 1530.194)" opacity="0.3" fill="url(#linear-gradient-3)"/>
+      <path id="Intersection_41" data-name="Intersection 41" d="M0,5.562,5.563,0,11,5.438a15.425,15.425,0,0,1-5.532,5.594Z" transform="translate(192.311 1530.195)" fill="#f1553f"/>
+    </g>
+  </g>
+</svg>

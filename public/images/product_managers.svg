@@ -1,0 +1,19 @@
+<svg id="product_managers" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6941b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e6941b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6941b"/>
+      <stop offset="1" stop-color="#e6941b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="1" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="Rectangle_5848" data-name="Rectangle 5848" width="48" height="48" opacity="0.2" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_5845" data-name="Rectangle 5845" width="32" height="6.4" transform="translate(0 8)" opacity="0.9" fill="url(#linear-gradient-2)"/>
+  <rect id="Rectangle_5846" data-name="Rectangle 5846" width="32" height="6.4" transform="translate(8 20.8)" opacity="0.9" fill="url(#linear-gradient-2)"/>
+  <rect id="Rectangle_5847" data-name="Rectangle 5847" width="24" height="6.4" transform="translate(16 33.6)" opacity="0.9" fill="url(#linear-gradient-2)"/>
+  <rect id="Rectangle_5849" data-name="Rectangle 5849" width="8" height="6.4" transform="translate(40 33.6)" fill="#e6941b"/>
+  <rect id="Rectangle_5850" data-name="Rectangle 5850" width="32" height="32" transform="translate(0 8)" opacity="0.4" fill="url(#linear-gradient-5)"/>
+</svg>

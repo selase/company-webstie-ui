@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.074" x2="0" y2="0.069" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#007ad6"/>
+      <stop offset="1" stop-color="#007ad6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="conversion" transform="translate(-672.955 -2384)">
+    <rect id="Rectangle_5756" data-name="Rectangle 5756" width="54" height="54" transform="translate(672.955 2384)" fill="rgba(0,0,0,0)" opacity="0"/>
+    <path id="Polygon_20" data-name="Polygon 20" d="M16,0,32,22H0Z" transform="translate(714.96 2418) rotate(180)" opacity="0.2" fill="url(#linear-gradient)"/>
+    <path id="Polygon_21" data-name="Polygon 21" d="M16,0,32,22H0Z" transform="translate(682.96 2406)" opacity="0.2" fill="url(#linear-gradient)"/>
+    <path id="Intersection_16" data-name="Intersection 16" d="M22390.6-6978l4.363-6,4.363,6-4.363,6Z" transform="translate(-21695.998 9390)" fill="#198cca"/>
+    <path id="Union_40" data-name="Union 40" d="M22378.957-6950l17.006-22.237-16-21.763h50l-16,21.763,17.006,22.237Z" transform="translate(-21706 9384)" opacity="0.1" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

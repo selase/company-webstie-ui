@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="100" viewBox="0 0 50 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.511" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#007ad6"/>
+      <stop offset="1" stop-color="#007ad6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.185" y1="0.592" x2="1" y2="1" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="fast" transform="translate(-535.873 -2304.394)">
+    <path id="Polygon_14" data-name="Polygon 14" d="M50,0l50,50H0Z" transform="translate(585.873 2304.394) rotate(90)" opacity="0.1" fill="url(#linear-gradient)"/>
+    <path id="Polygon_13" data-name="Polygon 13" d="M33,0,66,33H0Z" transform="translate(568.874 2338.394) rotate(90)" opacity="0.3" fill="url(#linear-gradient-2)"/>
+    <path id="Polygon_43" data-name="Polygon 43" d="M11,0,22,11H0Z" transform="translate(546.874 2338.394) rotate(90)" fill="#198cca"/>
+  </g>
+</svg>

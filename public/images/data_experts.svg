@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.074" x2="0" y2="0.069" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24b768"/>
+      <stop offset="1" stop-color="#24b768" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0" y1="1" x2="0" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="data_experts_" data-name="data_experts " transform="translate(-1684 -1504)">
+    <rect id="Rectangle_5771" data-name="Rectangle 5771" width="48" height="48" transform="translate(1732 1504) rotate(90)" fill="rgba(0,0,0,0)" opacity="0"/>
+    <g id="Group_18968" data-name="Group 18968" transform="translate(-1)">
+      <rect id="Rectangle_5774" data-name="Rectangle 5774" width="39" height="14" transform="translate(1718 1513) rotate(90)" opacity="0.3" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_5777" data-name="Rectangle 5777" width="48" height="14" transform="translate(1729 1504) rotate(90)" opacity="0.4" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_5775" data-name="Rectangle 5775" width="30" height="14" transform="translate(1707 1522) rotate(90)" opacity="0.1" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_5776" data-name="Rectangle 5776" width="8" height="8" transform="translate(1697 1544) rotate(90)" fill="#24b768"/>
+      <path id="Intersection_33" data-name="Intersection 33" d="M18385-6954v-30h3v30Z" transform="translate(-16681 8506)" opacity="0.1" fill="url(#linear-gradient-4)"/>
+      <path id="Intersection_34" data-name="Intersection 34" d="M18385-6945v-39h3v39Z" transform="translate(-16670 8496.999)" opacity="0.2" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>
