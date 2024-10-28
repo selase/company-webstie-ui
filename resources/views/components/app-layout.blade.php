@@ -921,6 +921,7 @@
         <main class="min-h-screen w-full">
             {{$slot}}
         </main>
+        @include('components.footer')
         <script>
             window.addEventListener('scroll', function () {
                 var login = document.getElementById('login');

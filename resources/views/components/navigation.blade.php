@@ -1,4 +1,4 @@
-<nav class=" bg-transparent fixed w-full shadow-lg h-20 flex top-0 z-50 items-center sm:px-20  text-white"
+<nav class=" bg-transparent fixed w-full h-20 flex top-0 z-50 items-center sm:px-10 lg:px-4  text-white"
     id="bgOnScroll">
     <div class="hidden lg:flex  w-full   items-center ">
         <div class="logo">
@@ -111,11 +111,12 @@
             </div>
         </div>
         <!-- Logins -->
-        <div class="space-x-6 items-center flex ml-auto  px-2 textOnScroll">
-            <a href="#" class="inline-block p-2  bg-green-600 text-white rounded w-full h-10 text-center ">Hire
+        <div class="gap-6 items-center flex ml-auto  px-2 textOnScroll ">
+            <a href="#"
+                class="inline-block p-2  bg-green-600 text-white rounded w-full h-10 text-center whitespace-nowrap">Hire
                 top
                 Talent</a>
-            <a href="#" class="inline-flex p-2  ring-1 ring-white/30 rounded whitespace-nowrap h-10 text-center  ">Hire
+            <a href="#" class="inline-flex p-2  ring-1 ring-white/30 rounded whitespace-nowrap h-10 text-center ">Hire
                 Apply as a Talent</a>
             <a href="#" class="font-bold transition-all duration-300" id="login">
                 Login
@@ -125,7 +126,7 @@
 
 
     <!-- Mobile Navigations -->
-    <div class=" flex mx-4 justify-between w-full items-center lg:hidden">
+    <div class=" flex mx-4 sm:mx-0 justify-between w-full items-center lg:hidden">
         <div class="logo">
             <a href="#" class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
@@ -149,8 +150,8 @@
             </button>
             <!-- menu content -->
             <div id="menu"
-                class="absolute top-0 min-w-[100%] transition-all min-h-screen bg-white left-0 p-6 hidden duration-300">
-                <div class="w-[95%] shadow-lg min-h-screen">
+                class="absolute top-0 min-w-[100%] transition-all min-h-screen bg-white left-0 p-6 hidden duration-300 overflow-y-auto">
+                <div class="w-[95%] shadow-lg h-[100%] ">
                     <!-- startup navigations -->
                     <div class="border-b space-y-2 px-4 w-full bg-blue py-4">
                         <div class=" flex justify-end ">
