@@ -4,8 +4,7 @@
     <div class="flex flex-col text-center py-16 space-y-8">
         <div class="space-y-2">
             <h1 class="text-4xl font-bold">A Global Community of Talent</h1>
-            <p class="text-lg text-gray-700">Connect with a global tech talent network and scale faster than anyone
-                else.
+            <p class="text-lg text-gray-700">Connect with a global tech talent network and scale faster than anyone software else.
             </p>
         </div>
         <nav class="hidden lg:flex ">
