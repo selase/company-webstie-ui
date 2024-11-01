@@ -929,7 +929,9 @@
     </head>
 
     <body class="">
-        @include('components.navigation')
+        <header>
+            @include('components.navigation')
+        </header>
         <main class="min-h-screen w-full">
             {{$slot}}
         </main>
