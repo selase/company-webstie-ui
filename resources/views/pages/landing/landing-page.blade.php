@@ -34,78 +34,78 @@
     }
 </style>
 @php
-    $talent_card_content = [
-        [
-            "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
-            "h1" => "Software Engineers",
-            "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
-            'border-left' => ""
-        ],
-        [
-            "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
-            "h1" => "Data Experts",
-            "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
-            "h1" => "AI Experts",
-            "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
-            "h1" => "QA Engineers",
-            "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
-            'border-left' => ""
-        ],
-        [
-            "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
-            "h1" => "Product Managers",
-            "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
-            "h1" => "Product Designers",
-            "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
-            'border-left' => "border-l-[2px] border-blue-900"
-        ]
-    ];
-    $team_card_content = [
-        [
-            "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
-            "h1" => 'Hire Fast',
-            "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
-        ],
-        [
-            "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
-            "h1" => 'Trusted Talent Only',
-            "p" => 'Get access to rigorously vetted and tested world’s best talent.'
-        ]
-
-    ];
-    $team_card_content2 = [
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:pr-6'
-        ],
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
-        ],
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => ' lg:px-6'
-        ],
-
+$talent_card_content = [
+    [
+        "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
+        "h1" => "Software Engineers",
+        "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
+        'border-left' => ""
+    ],
+    [
+        "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
+        "h1" => "Data Experts",
+        "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
+        "h1" => "AI Experts",
+        "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
+        "h1" => "QA Engineers",
+        "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
+        'border-left' => ""
+    ],
+    [
+        "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
+        "h1" => "Product Managers",
+        "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
+        "h1" => "Product Designers",
+        "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
+        'border-left' => "border-l-[2px] border-blue-900"
     ]
+];
+$team_card_content = [
+    [
+        "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
+        "h1" => 'Hire Fast',
+        "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
+    ],
+    [
+        "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
+        "h1" => 'Trusted Talent Only',
+        "p" => 'Get access to rigorously vetted and tested world’s best talent.'
+    ]
+
+];
+$team_card_content2 = [
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:pr-6'
+    ],
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
+    ],
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => ' lg:px-6'
+    ],
+
+]
 @endphp
 <x-app-layout>
     <!-- Hero section -->
@@ -169,7 +169,7 @@
         <div class="px-4 space-y-4 mt-8 grid  md:grid-cols-2 lg:grid-cols-3 lg:w-[80%]">
             @foreach ($talent_card_content as $card)
 
-                <div class="space-y-4 group gradient-bottom-border pb-6 sm:px-3 sm:{{$card['border-left']}}">
+                <div class="space-y-4 group gradient-bottom-border  sm:px-3 sm:{{$card['border-left']}}">
                     <div>
                         {!! $card['image'] !!}
                     </div>
@@ -178,7 +178,7 @@
                         {{$card['p']}}
                     </p>
                     <a href="#"
-                        class="flex space-x-2 hidden group-hover:flex  transform transition-transform duration-300 ease-out ease-in group-hover:translate-y-[-5px] mt-8 items-center ">
+                        class="flex space-x-2 invisible group-hover:visible  transform transition duration-700 ease-in-out group-hover:translate-y-[-8px] translate-y-0 mt-8 items-center ">
                         <p class=" text-blue-500 ">Learn More</p>
                         <span class="text-blue-500 text-3xl">&#10230;</span>
                     </a>
@@ -233,7 +233,7 @@
                 @foreach ($team_card_content2 as $card)
                     <div class="flex {{$card['border']}} ">
                         <div class="h-22 w-22 ">
-                            {!!$card['image']!!}
+                            {!!$card['image']!!}Lever
                         </div>
                         <div class="space-y-4  w-full ml-1">
                             <h1 class="text-xl font-bold text-[#333]/90">{{$card['h1']}}</h1>
