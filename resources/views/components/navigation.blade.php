@@ -54,7 +54,7 @@
                     class="hover:border-b-2 hover:border-blue-600 transition-colors duration-300 textOnScroll py-2">Customers</a>
             </div>
             <div>
-                <a href="#"
+                <a href="{{route('community-page')}}"
                     class="hover:border-b-2 hover:border-blue-600 transition-colors duration-300 textOnScroll py-2">Community</a>
             </div>
             <!-- About us navigations -->

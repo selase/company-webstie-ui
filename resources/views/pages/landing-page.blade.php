@@ -34,78 +34,78 @@
     }
 </style>
 @php
-$talent_card_content = [
-    [
-        "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
-        "h1" => "Software Engineers",
-        "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
-        'border-left' => ""
-    ],
-    [
-        "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
-        "h1" => "Data Experts",
-        "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
-        'border-left' => "border-l-[1px] border-blue-900"
-    ],
-    [
-        "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
-        "h1" => "AI Experts",
-        "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
-        'border-left' => "border-l-[1px] border-blue-900"
-    ],
-    [
-        "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
-        "h1" => "QA Engineers",
-        "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
-        'border-left' => ""
-    ],
-    [
-        "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
-        "h1" => "Product Managers",
-        "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
-        'border-left' => "border-l-[1px] border-blue-900"
-    ],
-    [
-        "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
-        "h1" => "Product Designers",
-        "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
-        'border-left' => "border-l-[2px] border-blue-900"
-    ]
-];
-$team_card_content = [
-    [
-        "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
-        "h1" => 'Hire Fast',
-        "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
-    ],
-    [
-        "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
-        "h1" => 'Trusted Talent Only',
-        "p" => 'Get access to rigorously vetted and tested world’s best talent.'
-    ]
+    $talent_card_content = [
+        [
+            "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
+            "h1" => "Software Engineers",
+            "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
+            'border-left' => ""
+        ],
+        [
+            "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
+            "h1" => "Data Experts",
+            "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
+            'border-left' => "border-l-[1px] border-blue-900"
+        ],
+        [
+            "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
+            "h1" => "AI Experts",
+            "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
+            'border-left' => "border-l-[1px] border-blue-900"
+        ],
+        [
+            "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
+            "h1" => "QA Engineers",
+            "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
+            'border-left' => ""
+        ],
+        [
+            "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
+            "h1" => "Product Managers",
+            "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
+            'border-left' => "border-l-[1px] border-blue-900"
+        ],
+        [
+            "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
+            "h1" => "Product Designers",
+            "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
+            'border-left' => "border-l-[2px] border-blue-900"
+        ]
+    ];
+    $team_card_content = [
+        [
+            "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
+            "h1" => 'Hire Fast',
+            "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
+        ],
+        [
+            "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
+            "h1" => 'Trusted Talent Only',
+            "p" => 'Get access to rigorously vetted and tested world’s best talent.'
+        ]
 
-];
-$team_card_content2 = [
-    [
-        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-        "h1" => 'The Workplace of the Future',
-        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:pr-6'
-    ],
-    [
-        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-        "h1" => 'The Workplace of the Future',
-        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
-    ],
-    [
-        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-        "h1" => 'The Workplace of the Future',
-        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-        'border' => ' lg:px-6'
-    ],
+    ];
+    $team_card_content2 = [
+        [
+            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+            "h1" => 'The Workplace of the Future',
+            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:pr-6'
+        ],
+        [
+            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+            "h1" => 'The Workplace of the Future',
+            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
+        ],
+        [
+            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+            "h1" => 'The Workplace of the Future',
+            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+            'border' => ' lg:px-6'
+        ],
 
-]
+    ]
 @endphp
 <x-app-layout>
     <!-- Hero section -->
@@ -551,49 +551,4 @@ $team_card_content2 = [
             class="ring-1 rounded ring-white text-white p-2 hover:bg-white hover:shadow-sm hover:text-blue-900/90">Start
             Hiring Now</a>
     </section>
-
-    @push('scripts')
-        <script>
-            window.addEventListener('scroll', function () {
-                var login = document.getElementById('login');
-                var bgOnScroll = document.getElementById('bgOnScroll');
-                var textOnScroll = document.getElementsByClassName('textOnScroll');
-                if (window.scrollY > 50) {
-                    login.classList.add('hidden');
-                    bgOnScroll.classList.add('bg-white', 'border-b-[1px]',);
-                    // bgOnScroll.classList.add('border-b-[1px]');
-                    // bgOnScroll.classList.add('border-gray-500');
-
-                    Array.from([...textOnScroll]).forEach(element => {
-                        element.classList.add('text-black')
-                    });
-                } else {
-                    login.classList.remove('hidden');
-                    bgOnScroll.classList.remove('bg-white', 'border-b-[1px]', 'border-[#333]');
-                    Array.from([...textOnScroll]).forEach(element => {
-                        element.classList.remove('text-black')
-                    });
-                }
-            })
-
-            // Select all elements with the reveal-on-scroll class
-            const revealElements = document.querySelectorAll('.reveal-on-scroll');
-
-            // Create an Intersection Observer
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible'); // Add 'visible' class when in viewport
-                        observer.unobserve(entry.target); // Optional: Stop observing after revealing
-                    }
-                });
-            }, { threshold: 0.1 }); // Adjust threshold as needed
-
-            // Observe each selected element
-            revealElements.forEach(element => {
-                observer.observe(element);
-            });
-
-        </script>
-    @endpush
 </x-app-layout>
