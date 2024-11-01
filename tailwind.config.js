@@ -21,6 +21,9 @@ export default {
                 90: "90",
                 100: "100",
             },
+            backgroundImage: {
+                "custom-image": "url('/public/images/laptop.jpg')",
+            },
         },
     },
     plugins: [],
