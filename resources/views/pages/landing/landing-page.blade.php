@@ -10,87 +10,109 @@
         border-bottom-style: solid;
         border-image: linear-gradient(to right, #e0f7fa, #2196f3, #e0f7fa) 1;
     }
+
+    .slide-in {
+        /* Start the div off-screen in the top-left corner */
+        transform: translate(-100%, -100%);
+        animation: slideIn 1s ease-out forwards;
+        opacity: 0;
+        /* Start transparent */
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translate(-100%, -100%);
+            /* Off-screen in the top-left corner */
+            opacity: 0;
+        }
+
+        to {
+            transform: translate(0, 0);
+            /* Original position */
+            opacity: 1;
+        }
+    }
 </style>
 @php
-    $talent_card_content = [
-        [
-            "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
-            "h1" => "Software Engineers",
-            "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
-            'border-left' => ""
-        ],
-        [
-            "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
-            "h1" => "Data Experts",
-            "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
-            "h1" => "AI Experts",
-            "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
-            "h1" => "QA Engineers",
-            "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
-            'border-left' => ""
-        ],
-        [
-            "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
-            "h1" => "Product Managers",
-            "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
-            'border-left' => "border-l-[1px] border-blue-900"
-        ],
-        [
-            "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
-            "h1" => "Product Designers",
-            "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
-            'border-left' => "border-l-[2px] border-blue-900"
-        ]
-    ];
-    $team_card_content = [
-        [
-            "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
-            "h1" => 'Hire Fast',
-            "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
-        ],
-        [
-            "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
-            "h1" => 'Trusted Talent Only',
-            "p" => 'Get access to rigorously vetted and tested world’s best talent.'
-        ]
-
-    ];
-    $team_card_content2 = [
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80'
-        ],
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
-        ],
-        [
-            "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
-            "h1" => 'The Workplace of the Future',
-            "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
-            'border' => ' lg:px-6'
-        ],
-
+$talent_card_content = [
+    [
+        "image" => '<img src="' . asset('images/software_engineers.svg') . '" alt="software-engineer logo"/>',
+        "h1" => "Software Engineers",
+        "p" => "Exceptional software engineers, coders, and architects with expertise across hundreds of technologies.",
+        'border-left' => ""
+    ],
+    [
+        "image" => '<img src="' . asset('images/data_experts.svg') . '" alt="data_experts logo"/>',
+        "h1" => "Data Experts",
+        "p" => "Data scientists, data engineers, and data analysts with expertise in building, maintaining, and scaling data infrastructures.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/ai_experts.svg') . '" alt="ai_experts logo"/>',
+        "h1" => "AI Experts",
+        "p" => "AI specialists, machine learning engineers, and researchers with proficiency in advanced AI technologies and algorithms.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/QA_engineers.svg') . '" alt="QA_engineers logo"/>',
+        "h1" => "QA Engineers",
+        "p" => "Manual and automation QA engineers with expertise in variety of tools, techniques and testing strategies.",
+        'border-left' => ""
+    ],
+    [
+        "image" => '<img src="' . asset('images/UX-UI_designers.svg') . '" alt="UI-UX_managers logo"/>',
+        "h1" => "Product Managers",
+        "p" => "Product owners, product managers, and scrum masters with expertise in numerous industries industries like banking, healthcare, fintech, and more.",
+        'border-left' => "border-l-[1px] border-blue-900"
+    ],
+    [
+        "image" => '<img src="' . asset('images/product_managers.svg') . '" alt="product_managers logo"/>',
+        "h1" => "Product Designers",
+        "p" => "Product designers and UX/UI engineers with expertise in creating an exceptional customer experience through creative solutions.",
+        'border-left' => "border-l-[2px] border-blue-900"
     ]
+];
+$team_card_content = [
+    [
+        "image" => '<img src=" ' . asset('images/fast.svg') . '" alt="fast">',
+        "h1" => 'Hire Fast',
+        "p" => 'Hire in less than a week  utilize our expert matching to reduce your time-to-hire and move fast.'
+    ],
+    [
+        "image" => '<img src=" ' . asset('images/extension.svg') . '" alt="extension">',
+        "h1" => 'Trusted Talent Only',
+        "p" => 'Get access to rigorously vetted and tested world’s best talent.'
+    ]
+
+];
+$team_card_content2 = [
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80'
+    ],
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => 'lg:border-r-[1px] lg:border-[#2196f3]/80 lg:px-6'
+    ],
+    [
+        "image" => '<img src="' . asset('images/platform.svg') . '" alt="platform icon">',
+        "h1" => 'The Workplace of the Future',
+        "p" => 'A Data driven platform that helps you find the right talents with the right skill sets with speed and ease.',
+        'border' => ' lg:px-6'
+    ],
+
+]
 @endphp
 <x-app-layout>
     <!-- Hero section -->
     <section
-        class="flex pt-20 sm:pt-24 sm:justify-center  min-h-[80vh] bg-gradient-to-b from-[#102257] via-[#071235 ] to-[#070f26]">
-        <div class="sm:flex sm:w-[80%] space-x-6">
-            <div class="px-6 space-y-8 py-10  lg:w-[50%]">
+        class=" flex pt-8 sm:pt-24 sm:justify-center md:items-center min-h-[80vh] bg-gradient-to-b from-[#102257] via-[#071235 ] to-[#070f26] ">
+        <div class="sm:flex sm:w-[80%]   md:justify-between">
+            <div class="px-6 space-y-8 py-10  lg:w-[50%] slide-in">
                 <h1 class="text-5xl font-bold text-white/90 w-64 sm:w-full ">Hire Top Talent for Contract Engineering
                     Roles.
                 </h1>
@@ -103,13 +125,14 @@
                     Talent</a>
             </div>
             <div class="hidden lg:flex p-8">
-                <img src="{{asset('images/globe.jpeg')}}" alt="globe" class="w-[100%] lg:h-[80%] xl:h-[100%]">
+                <img src="{{asset('images/globe.jpeg')}}" alt="globe"
+                    class="w-[100%] lg:h-[100%] xl:h-[100%] outline-4  animate-pulse">
             </div>
         </div>
     </section>
 
     <!-- Trusted product and engineers section -->
-    <section class=" min-h-[20vh] bg-blue-100/10 f">
+    <section class="reveal-on-scroll min-h-[20vh] bg-blue-100/10 ">
         <div class="flex flex-col items-center py-10 justify-center space-y-8">
 
 
@@ -141,7 +164,7 @@
         </div>
     </section>
     <!-- Talent section -->
-    <section class="min-h-[40vh] bg-blue-100/10 flex flex-col items-center pt-10 pb-20">
+    <section class="reveal-on-scroll min-h-[40vh] bg-blue-100/10 flex flex-col items-center pt-10 pb-20">
         <h1 class="text-5xl text-center font-[200] text-[#304040] mb-2">Leverage a Global Talent Network</h1>
         <div class="px-4 space-y-4 mt-8 grid  md:grid-cols-2 lg:grid-cols-3 lg:w-[80%]">
             @foreach ($talent_card_content as $card)
@@ -155,7 +178,7 @@
                         {{$card['p']}}
                     </p>
                     <a href="#"
-                        class="flex space-x-2 hidden group-hover:flex  transform transition-transform duration-300 ease-out ease-in group-hover:translate-y-[-5px] mt-8 items-center">
+                        class="flex space-x-2 hidden group-hover:flex  transform transition-transform duration-300 ease-out ease-in group-hover:translate-y-[-5px] mt-8 items-center ">
                         <p class=" text-blue-500 ">Learn More</p>
                         <span class="text-blue-500 text-3xl">&#10230;</span>
                     </a>
@@ -165,7 +188,7 @@
         </div>
     </section>
     <!-- Team section-->
-    <section class="min-h-[80vh] flex bg-blue-100/20 px-4 pt-8 pb-20 lg:justify-center">
+    <section class="reveal-on-scroll min-h-[80vh] flex bg-blue-100/20 px-4 pt-8 pb-20 lg:justify-center scroll-effect">
         <div class="lg:w-[80%] space-y-10">
             <div class="flex space-x-20 items-center">
                 <div class="space-y-6">
@@ -222,7 +245,7 @@
         </div>
     </section>
     <div
-        class=" min-h-[30vh] bg-gradient-to-br	from-blue-700/20 via-blue-700/5 gradient-top-border flex items-center py-6">
+        class=" min-h-[30vh] bg-gradient-to-br	from-blue-700/20 via-blue-700/5 gradient-top-border flex items-center py-6 reveal-on-scroll">
         <div
             class="w-[80%] flex flex-col sm:flex-row items-center  space-y-6 py-6 sm:flex sm:justify-between  ml-auto mr-auto ">
             <div class="text-center space-y-2">
@@ -240,7 +263,7 @@
         </div>
     </div>
     <div
-        class=" min-h-[80vh] bg-gradient-to-b from-[#070f26] via-[#071235 ] to-[#102257] flex flex-col justify-between items-center space-y-40 px-4">
+        class=" min-h-[80vh] bg-gradient-to-b from-[#070f26] via-[#071235 ] to-[#102257] reveal-on-scroll flex flex-col justify-between items-center space-y-40 px-4">
         <div class="max-w-xl text-center pt-10 space-y-6">
             <p class="text-lg text-white/30">WORK.REIMAGINED</p>
             <h1 class="text-white text-4xl ">Professional Network of Endless Possibilities.</h1>
@@ -255,7 +278,7 @@
     <!-- Community Talent Section-->
     <x-job-layout>
         <div
-            class="flex flex-col space-y-10  items-center lg:space-x-8 px-4 lg:w-[80%] lg:mx-auto lg:justify-between lg:flex-row flex-wrap lg:space-y-0">
+            class="flex flex-col space-y-10  items-center lg:space-x-8 px-4 lg:w-[80%] lg:mx-auto lg:justify-between lg:flex-row flex-wrap lg:space-y-0 reveal-on-scroll">
             <div
                 class="ring-1 ring-gray-300 flex flex-col justify-center items-center w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] rounded-lg group relative space-y-24">
                 <div class="flex flex-col items-center space-y-2 pt-8 px-4">
@@ -365,7 +388,7 @@
         </div>
 
     </x-job-layout>
-    <section class="min-h-[60vh] bg-gray-100">
+    <section class="reveal-on-scroll min-h-[60vh] bg-gray-100 reveal-on-scroll">
         <div class="px-4 space-y-8 py-24  lg:w-[80%] lg:mx-auto ">
             <div class="flex flex-col items-center pb-10 pt-10 space-y-4">
                 <h1 class="text-[2.7rem] text-center ">Over 200 companies trust Adeva</h1>
@@ -412,7 +435,7 @@
         </div>
     </section>
     <!-- Profile Section -->
-    <section class="">
+    <section class="reveal-on-scroll">
         <div
             class="px-2 flex flex-col space-y-8 items-center py-16 sm:grid sm:grid-cols-3 sm:space-x-8 md:grid-cols-4 lg:w-[80%] lg:mx-auto">
             <!-- <div class=""> -->
@@ -519,7 +542,7 @@
             <!-- </div> -->
         </div>
     </section>
-    <section class="bg-blue-900/90 h-[50vh] flex flex-col justify-center items-center space-y-6">
+    <section class="bg-blue-900/90 h-[50vh] flex flex-col justify-center items-center space-y-6 reveal-on-scroll">
         <div class="text-center space-y-1">
             <h1 class="text-4xl text-white font-bold">Ready to Hire?</h1>
             <p class="text-lg text-white/90 ">Enhancing your engineer teams start here.</p>
@@ -529,4 +552,51 @@
             Hiring Now</a>
     </section>
 
+    @push('scripts')
+        <script>
+            window.addEventListener('scroll', function () {
+                var login = document.getElementById('login');
+                var bgOnScroll = document.getElementById('bgOnScroll');
+                var textOnScroll = document.getElementsByClassName('textOnScroll');
+                if (window.scrollY > 50) {
+                    login.classList.add('hidden');
+                    bgOnScroll.classList.add('bg-white');
+                    // bgOnScroll.classList.add('text-black');
+
+                    Array.from([...textOnScroll]).forEach(element => {
+                        element.classList.add('text-black')
+                    });
+                } else {
+                    login.classList.remove('hidden');
+                    bgOnScroll.classList.remove('bg-white');
+                    Array.from([...textOnScroll]).forEach(element => {
+                        element.classList.remove('text-black')
+                    });
+                }
+            })
+            window.addEventListener('scroll', function () {
+                const element = document.querySelector('.scroll-effect');
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+            })
+            // Select all elements with the reveal-on-scroll class
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Add 'visible' class when in viewport
+                        observer.unobserve(entry.target); // Optional: Stop observing after revealing
+                    }
+                });
+            }, { threshold: 0.1 }); // Adjust threshold as needed
+
+            // Observe each selected element
+            revealElements.forEach(element => {
+                observer.observe(element);
+            });
+
+        </script>
+    @endpush
 </x-app-layout>

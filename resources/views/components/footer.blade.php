@@ -1,4 +1,4 @@
-<footer class="pt-20">
+<footer class="pt-20 reveal-on-scroll">
     <div class="px-4 w-[95%]  md:w-[80%] mx-auto">
         <div class="flex flex-col items-center space-y-16 md:grid md:grid-cols-5 pb-32">
             <div class="inline-flex items-center space-x-8 md:col-span-5">

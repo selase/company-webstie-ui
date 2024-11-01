@@ -914,6 +914,18 @@
                 }
             </style>
         @endif
+        <style>
+            .reveal-on-scroll {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s 0.3s ease, transform 0.5s ease;
+            }
+
+            .reveal-on-scroll.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
     </head>
 
     <body class="">
@@ -922,28 +934,7 @@
             {{$slot}}
         </main>
         @include('components.footer')
-        <script>
-            window.addEventListener('scroll', function () {
-                var login = document.getElementById('login');
-                var bgOnScroll = document.getElementById('bgOnScroll');
-                var textOnScroll = document.getElementsByClassName('textOnScroll');
-                if (window.scrollY > 50) {
-                    login.classList.add('hidden');
-                    bgOnScroll.classList.add('bg-white');
-                    // bgOnScroll.classList.add('text-black');
-
-                    Array.from([...textOnScroll]).forEach(element => {
-                        element.classList.add('text-black')
-                    });
-                } else {
-                    login.classList.remove('hidden');
-                    bgOnScroll.classList.remove('bg-white');
-                    Array.from([...textOnScroll]).forEach(element => {
-                        element.classList.remove('text-black')
-                    });
-                }
-            })
-        </script>
+        @stack('scripts')
     </body>
 
 </html>
