@@ -1,8 +1,8 @@
 <nav class=" bg-transparent fixed w-full h-20 lg:h-16 flex top-0 z-50 items-center sm:px-10 lg:px-4  text-white/80 "
     id="bgOnScroll">
-    <div class="hidden lg:flex  w-full   items-center h-18 py-2">
+    <div class="hidden lg:flex  w-[80%] mx-auto   items-center justify-between  h-18 py-2">
         <div class="logo">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="{{route('home')}}" class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
                     <!-- Hexagon -->
                     <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" fill="#4B0082" stroke="black"
@@ -16,7 +16,7 @@
             </a>
         </div>
         <!-- navigation group -->
-        <div class="flex items-center space-x-8 ml-20">
+        <div class="flex items-center justify-around w-[80%] ml-20">
             <!-- Hiring navigations -->
             <div class="relative group textOnScroll py-2">
                 <button class="flex whitespace-nowrap items-center space-x-1 ">
@@ -93,8 +93,8 @@
                 </button>
                 <!-- Dropremown content -->
                 <div
-                    class="min-w-[24rem] absolute transition duration-500 ease-in-out group-hover:transform  opacity-0 translate-y-0  min-h-24 invisible group-hover:visible group-hover:translate-y-[44px] z-60  bg-white rounded-lg top-0 left-0 group-hover:opacity-100 shadow-lg border-t-[1px]">
-                    <div class=" w-10 h-10 rotate-45 absolute ease-in-out bg-white z-0 left-6 border-[1px]">
+                    class="min-w-[24rem] absolute transition duration-500 ease-in-out group-hover:transform  opacity-0 translate-y-0  min-h-24 invisible group-hover:visible group-hover:translate-y-[44px] z-60  bg-white rounded-lg top-0 -left-20 group-hover:opacity-100 shadow-lg border-t-[1px] ">
+                    <div class=" w-10 h-10 rotate-45 absolute ease-in-out bg-white z-0 left-20 border-[1px]">
                     </div>
                     <div class="relative w-full top-0 rounded-lg bg-white min-h-24 py-4 space-y-4">
                         <a href="" class="inline-flex hover:bg-gray-100 w-full px-4 py-2 space-x-6">
@@ -130,7 +130,7 @@
             </div>
         </div>
         <!-- Logins -->
-        <div class="gap-6 items-center flex ml-auto  px-2 textOnScroll ">
+        <!-- <div class="gap-6 items-center flex ml-auto  px-2 textOnScroll ">
             <a href="#"
                 class="inline-block p-2  bg-green-600 text-white rounded w-full h-10 text-center whitespace-nowrap">Hire
                 top
@@ -140,14 +140,14 @@
             <a href="#" class="font-bold transition-all duration-300" id="login">
                 Login
             </a>
-        </div>
+        </div> -->
     </div>
 
 
     <!-- Mobile Navigations -->
     <div class=" flex mx-4 sm:mx-0 justify-between w-full items-center lg:hidden">
         <div class="logo">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="/" class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
                     <!-- Hexagon -->
                     <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" fill="#4B0082" stroke="black"
@@ -196,11 +196,11 @@
                     </div>
                     <!-- Customers navigation -->
                     <div class="border-b space-y-4 px-4 w-full bg-blue py-4">
-                        <a href="#"
+                        <a href="{{route('home')}}"
                             class="hover:rounded-sm hover:bg-black/10 transition-colors duration-300 w-full  block p-1 font-bold text-black/90">
                             Customers
                         </a>
-                        <a href="#"
+                        <a href="{{route('community-page')}}"
                             class="hover:rounded-sm hover:bg-black/10 transition-colors duration-300 w-full  block p-1 font-bold text-black/90">
                             Community
                         </a>

@@ -930,7 +930,7 @@
 
     <body class="">
         <header>
-            @include('components.navigation')
+            @include('components.navigation',["commnunity"])
         </header>
         <main class="min-h-screen w-full">
             {{$slot}}
@@ -940,11 +940,11 @@
 
         <script>
             window.addEventListener('scroll', function () {
-                var login = document.getElementById('login');
+                // var login = document.getElementById('login');
                 var bgOnScroll = document.getElementById('bgOnScroll');
                 var textOnScroll = document.getElementsByClassName('textOnScroll');
                 if (window.scrollY > 50) {
-                    login.classList.add('hidden');
+                    // login.classList.add('hidden');
                     bgOnScroll.classList.add('bg-white', 'border-b-[1px]',);
                     // bgOnScroll.classList.add('border-b-[1px]');
                     // bgOnScroll.classList.add('border-gray-500');
@@ -953,7 +953,7 @@
                         element.classList.add('text-black')
                     });
                 } else {
-                    login.classList.remove('hidden');
+                    // login.classList.remove('hidden');
                     bgOnScroll.classList.remove('bg-white', 'border-b-[1px]', 'border-[#333]');
                     Array.from([...textOnScroll]).forEach(element => {
                         element.classList.remove('text-black')

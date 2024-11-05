@@ -23,6 +23,10 @@ export default {
             },
             backgroundImage: {
                 "custom-image": "url('/public/images/laptop.jpg')",
+                "community-image": "url('/public/images/adeva_our_vision.jpg')",
+            },
+            boxShadow: {
+                even: "0 0 10px rgba(0, 0, 0, 0.15)", // Modify as needed
             },
         },
     },
