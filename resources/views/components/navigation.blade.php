@@ -1,3 +1,14 @@
+<style>
+    .gradient-left-border {
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-image: linear-gradient(to right, #000, #000, #00000040) 1;
+    }
+
+    .gradient-left-border:hover {
+        border-left-width: 1px solid green;
+    }
+</style>
 <nav class=" bg-transparent fixed w-full h-20 lg:h-16 flex top-0 z-50 items-center sm:px-10 lg:px-4  text-white/80 "
     id="bgOnScroll">
     <div class="hidden lg:flex  w-[80%] mx-auto   items-center justify-between  h-18 py-2">
@@ -49,12 +60,74 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="#"
-                    class="hover:border-b-2 hover:border-blue-600 transition-colors duration-300 textOnScroll py-2">Customers</a>
+            <div class="">
+                <button class=" transition-colors duration-300 textOnScroll py-2" onclick="Array.from(document.getElementById('platform-modal').classList).includes('hidden')=== true ? document.getElementById('platform-modal').classList.remove('hidden'):document.getElementById('platform-modal').classList.add('hidden')">Platform</button>
+                <!-- Modal for displaying product -->
+                <div class="absolute top-0 w-full  transform translate-y-16 hidden " id="platform-modal">
+                    <div class="w-[70%] lg:min-h-[40vh] xl:min-h-[55vh] bg-white shadow-xl text-black z-70 rounded-lg -translate-x-[40%] transform flex items-center">
+                        <div class="grid grid-cols-3  items-start   w-[80%] shadow-sm lg:min-h-[40vh] xl:min-h-[55vh]  pt-16">
+                            <div class="px-8 ">
+                                <a href="#" class="space-y-2 group">
+                                    <h1 class="text-3xl ">Andela Talent Cloud</h1>
+                                    <p class="text-md text-[#333]">The only AI platform you need for simplified tech solution</p>
+                                    <div
+                                        class="flex items-center space-x-2">
+                                        <p class="text-sm">Learn More</p>
+                                        <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300">&#10230;</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="space-y-6 ">
+                                <h1 class="text-2xl ">Products</h1>
+                                <a href="#" class="inline-block  pl-4 border-l-[1px] hover:border-green-600 group space-y-2 border-black">
+                                    <div class="flex">
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Andeva</h1>
+                                        <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
+                                    </div>
+                                    <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>
+                                </a>
+                                <a href="#" class="inline-block  pl-4  hover:border-green-600 group space-y-2 border-l-[1px] border-black">
+                                    <div class="flex">
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Andeva</h1>
+                                        <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
+                                    </div>
+                                    <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>
+                                </a>
+                            </div>
+                            <div class="space-y-6">
+                                <h1 class="text-2xl ">INTEGRATIONS</h1>
+                                <a href="#" class="inline-block  pl-4 border-l-[1px] hover:border-green-600 group space-y-2 border-black">
+                                    <div class="flex">
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Andeva Connects</h1>
+                                        <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
+                                    </div>
+                                    <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="bg-ai-main-image bg-bottom lg:min-h-[40vh] xl:min-h-[55vh]  w-[30%] bg-right bg-contain rounded-tr-lg rounded-br-lg">
+                            <div class="bg-gradient-to-bl from-cyan-300 to-cyan-100/30 w-full lg:min-h-[40vh] xl:min-h-[55vh] py-8 rounded-tr-lg rounded-br-lg ">
+                                <a href="#" class="rounded-lg w-[80%] mx-auto block bg-white shadow-lg group">
+                                    <img src="{{asset('/images/665a68d0fb4baf76b83a5923_AI-tools-IT-services-InteriorHero-tiny-p-500.png')}}" alt="IT internal Hero" class="block rounded-tr-lg rounded-tl-lg ">
+                                    <div class="flex flex-col justify-between gap-10 px-4 py-2 group-hover:bg-green-900 group-hover:rounded-br-lg group-hover:rounded-bl-lg">
+                                        <div class="space-y-4">
+                                            <h1 class="text-lg font-bold text-[#333]/80 group-hover:text-white">Blog</h1>
+                                            <h2 class="text-2xl font-bold group-hover:text-white">AI Tool &#38; Manage IT Services for Business success</h2>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <h1 class="font-bold text-[#333] group-hover:text-white text-sm">Learn More</h1>
+                                            <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300  group-hover:flex group-hover:text-white">&#10230;</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div>
-                <a href="{{route('community-page')}}"
+                <a href=" {{route('community-page')}}"
                     class="hover:border-b-2 hover:border-blue-600 transition-colors duration-300 textOnScroll py-2">Community</a>
             </div>
             <!-- About us navigations -->
@@ -75,7 +148,7 @@
                         <a href="" class="inline-flex hover:bg-gray-100 w-full px-4 py-2 space-x-6">
                             <img src="{{asset('/images/news.svg')}}" alt="News">
                             <div>
-                                <p class="text-black font-bold">Company News</p>
+                                <p class="text-black font-bold">Compatny News</p>
                                 <p class="text-[#333] text-xs">Latest news and anouncement updates.</p>
                             </div>
                         </a>
