@@ -61,14 +61,14 @@
                 </div>
             </div>
             <div class="">
-                <button class=" transition-colors duration-300 textOnScroll py-2" onclick="Array.from(document.getElementById('platform-modal').classList).includes('hidden')=== true ? document.getElementById('platform-modal').classList.remove('hidden'):document.getElementById('platform-modal').classList.add('hidden')">Platform</button>
+                <button class=" hover:border-b-2 hover:border-blue-600 transition-colors duration-300 textOnScroll py-2" onclick="Array.from(document.getElementById('platform-modal').classList).includes('hidden')=== true ? document.getElementById('platform-modal').classList.remove('hidden'):document.getElementById('platform-modal').classList.add('hidden')">Platform</button>
                 <!-- Modal for displaying product -->
                 <div class="absolute top-0 w-full  transform translate-y-16 hidden " id="platform-modal">
                     <div class="w-[70%] lg:min-h-[40vh] xl:min-h-[55vh] bg-white shadow-xl text-black z-70 rounded-lg -translate-x-[40%] transform flex items-center">
                         <div class="grid grid-cols-3  items-start   w-[80%] shadow-sm lg:min-h-[40vh] xl:min-h-[55vh]  pt-16">
                             <div class="px-8 ">
                                 <a href="#" class="space-y-2 group">
-                                    <h1 class="text-3xl ">Andela Talent Cloud</h1>
+                                    <h1 class="text-3xl ">Alchemy Talent Cloud</h1>
                                     <p class="text-md text-[#333]">The only AI platform you need for simplified tech solution</p>
                                     <div
                                         class="flex items-center space-x-2">
@@ -81,14 +81,14 @@
                                 <h1 class="text-2xl ">Products</h1>
                                 <a href="#" class="inline-block  pl-4 border-l-[1px] hover:border-green-600 group space-y-2 border-black">
                                     <div class="flex">
-                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Andeva</h1>
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Alchemy</h1>
                                         <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
                                     </div>
                                     <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>
                                 </a>
-                                <a href="#" class="inline-block  pl-4  hover:border-green-600 group space-y-2 border-l-[1px] border-black">
+                                <a href="{{route('product-page')}}" class="inline-block  pl-4  hover:border-green-600 group space-y-2 border-l-[1px] border-black">
                                     <div class="flex">
-                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Andeva</h1>
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Qualified by Alchemy</h1>
                                         <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
                                     </div>
                                     <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>
@@ -98,7 +98,7 @@
                                 <h1 class="text-2xl ">INTEGRATIONS</h1>
                                 <a href="#" class="inline-block  pl-4 border-l-[1px] hover:border-green-600 group space-y-2 border-black">
                                     <div class="flex">
-                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Andeva Connects</h1>
+                                        <h1 class="font-bold text-[#333] group-hover:text-green-600 text-underline">Alchemy Connects</h1>
                                         <span class=" transform translate-x-0 group-hover:translate-x-2 duration-300 hidden group-hover:flex group-hover:text-green-600">&#10230;</span>
                                     </div>
                                     <p class="group-hover:text-green-600">The Leading skills for top technology assessment</p>

@@ -24,10 +24,11 @@ export default {
             backgroundImage: {
                 "custom-image": "url('/public/images/laptop.jpg')",
                 "community-image": "url('/public/images/adeva_our_vision.jpg')",
-                "AI-image":
-                    "url(/public/images/665a68d0fb4baf76b83a5923_AI-tools-IT-services-InteriorHero-tiny-p-500.png)",
+                "analytical-image": "url(/public/images/analytical-image.jpg)",
                 "ai-main-image":
                     "url('/public/images/66324c7108030f158eedcad7_Vector.avif')",
+                "svg-bg-image":
+                    "url('/public/images/6642d65792364637525a75fb_unparalleled-bg-1.svg')",
             },
             boxShadow: {
                 even: "0 0 10px rgba(0, 0, 0, 0.15)", // Modify as needed

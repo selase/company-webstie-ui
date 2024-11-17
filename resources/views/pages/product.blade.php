@@ -42,56 +42,42 @@ $cards = [
 ];
 @endphp
 <x-app-layout>
-    <section class="bg-custom-image h-screen w-full  ">
+    <section class="bg-analytical-image h-screen w-full  bg-no-repeat bg-cover">
         <div
-            class="bg-gradient-to-br from-gray-100  via-gray-400/95 to-transparent bg-cover h-screen flex items-center justify-center lg:pt-16">
+            class="bg-black/70 h-screen flex items-center justify-center lg:pt-16">
             <div class="space-y-10 flex items-center flex-col w-[90%] mx-auto lg:w-[35%] lg:ml-28 lg:items-start">
-                <h1 class="text-5xl text-center font-bold text-[#333] lg:text-left lg:max-w-xl">Welcome to the Future of
+                <h1 class="text-5xl text-center font-bold text-white lg:text-left lg:max-w-xl">Welcome to the Future of
                     Work</h1>
-                <p class="text-xl text-justify">Join our mission to enable work without boundaries for 1 Million tech
+                <p class="text-xl text-justify text-white">Join our mission to enable work without boundaries for 1 Million tech
                     talent in the world.</p>
                 <button class="text-white text-xl w-full p-3 rounded-lg bg-green-600 lg:w-40">Join Now</button>
             </div>
         </div>
     </section>
-    <section class="bg-white drop-shadow-sm">
-        <nav class="h-20 border-b-[1px] reveal-on-scroll">
-            <div class="w-[65%] mx-auto  flex justify-between lg:ml-24 lg:w-[20%]">
-                <a href=""
-                    class="h-20 text-center  pt-8 border-b-2 border-b-blue-600 font-bold text-gray-600">Community</a>
-                <a href=""
-                    class="h-20 text-center  pt-8 border-b-2 text-gray-400 hover:border-b-blue-600 font-bold ">Events</a>
-            </div>
-        </nav>
+    <x-product-layout>
         <div
-            class="space-x-8 space-y-16 flex flex-col items-center pt-16 md:grid md:grid-cols-2  lg:w-[80%] lg:mx-auto pr-6 gap-4 md:items-start">
-            <h1 class="text-3xl font-bold text-center max-w-md md:col-span-2 md:space-x-0  md:mx-auto ">
-                Help to improve
-                people’s
-                working lives</h1>
+            class="space-x-8 space-y-16 flex flex-col-reverse items-center pt-16 md:grid md:grid-cols-2  lg:w-[80%] lg:mx-auto pr-6 gap-4 md:items-center">
+
             <div>
-                <h2 class="text-4xl font-bold text-[#333]/90 max-w-md relative z-10 mb-6">Our vision is to bring equal
-                    opportunities to all
-                    developers around the world, no matter their
-                    location, gender or race.
-                    <hr class="border-orange-500/80 border-[0.3rem]  w-[80%] absolute -bottom-0 -z-10">
-                </h2>
-                <div class="bg-community-image w-[80%] h-[55vh] bg-cover bg-right-top hidden md:flex"></div>
-                <!-- <img src="{{asset('/images/adeva_our_vision.jpg')}}" alt="ugmc logo" class="hidden md:inline-flex"> -->
+                <!-- <h2 class="text-4xl font-bold text-[#333]/90 max-w-md relative z-10 mb-6">Our vision is to bring equal
+                        opportunities to all
+                        developers around the world, no matter their
+                        location, gender or race.
+                        <hr class="border-orange-500/80 border-[0.3rem]  w-[80%] absolute -bottom-0 -z-10">
+                    </h2>
+                    <div class="w-[80%] h-[55vh] bg-cover bg-right-top hidden md:flex"></div>
+                    <img src="{{asset('/images/adeva_our_vision.jpg')}}" alt="ugmc logo" class="hidden md:inline-flex"> -->
+
+                <img src="{{asset('/images/card1.jpeg')}}" alt="" class="rounded-lg shadow-2xl">
             </div>
-            <div class="space-y-8 text-xl ">
-                <p>Starting our professional career in a small European country, it felt like great opportunities were
-                    reserved for others. Exciting projects were entitled to developers in global tech centers. What
-                    usually came to our hands were outdated technologies and tedious projects.</p>
-                <p>We decided to do something about this. We built Adeva with the vision to bring equal opportunities to
-                    developers everywhere. We built it for us, and for everyone else who’s been caught in the trap of
-                    being a second-rate citizen in the software world.</p>
-                <p>Our community welcomes members from all over the globe, helping them join amazing remote teams, grow
-                    professionally, and be recognized as technology leaders.</p>
+            <div class="space-y-4 text-xl ">
+                <h1 class="text-4xl font-bold">Make global payouts easy</h1>
+                <p class="text-[#333] text-lg ">Use Andela Pay for payouts, compliance, and tax reporting in more than 100 countries. It’s completely turnkey, reducing the cost and
+                    staff required to manage different systems and labor laws.</p>
             </div>
         </div>
-    </section>
-    <!-- community worldwide -->
+    </x-product-layout>
+
     <section class="bg-gray-100/30   min-h-screen pt-8 ">
         <div class="lg:w-[80%] lg:mx-auto flex flex-col items-center space-y-10 pb-24">
             <h1 class="text-4xl text-center font-bold max-w-lg  text-[#333]">40+ Communities Worldwide
@@ -175,113 +161,39 @@ $cards = [
             </div>
         </div>
     </section>
-    <!-- <img src="{{asset('/images/quote-svgrepo-com.svg')}}" alt="Quotation mark" class="w-10 h-10"> -->
-    <div x-data="{            
-        slides: [                
-            { 
-                    imgSrc:'{{asset('/images/rita-viegas.jpg')}}',
-                    imgAlt:'Rita',
-                    title:'Senior BI Engineer',
-                 description: `
-            Joining Adeva completely changed the way I manage my work and life.
-            It gave me the opportunity to work remotely for worldwide projects while keeping a very healthy work-life balance.
-            I get to connect with proactive and interesting people, always eager to learn and improve which really makes me feel integrated into a supportive community.
-    
-            It's definitely one of my most cherished and empowering job experiences so far!
-        `,
-                
-                ctaText:'Rita Viegas'
-            }  ,
-                 { 
-                imgSrc:'{{asset('/images/ramy-mousa.jpg')}}',
-                imgAlt:'Ramy',
-                title:'Senior Innovative Solutions Developer',
-                description: `
-            Design and implement cutting-edge technology solutions to solve complex problems, improve user experiences, and drive business success. Collaborate with multidisciplinary teams to create scalable, secure, and innovative applications using the latest tech trends and practices.
-            
-            It's definitely one of my most cherished and empowering job experiences so far!
-        `,
-                ctaText:'Ramy Mousa'
-            } ,
-                 { 
-                imgSrc:'{{asset('/images/davor-minchorov.jpg')}}',
-                imgAlt:'Davor',
-                title:'Data Scientist',
-                description: `
-            Analyze complex datasets to extract insights and inform decision-making. Build predictive models and machine learning algorithms to solve business challenges. Visualize data effectively and communicate findings to technical and non-technical stakeholders.
-            
-        `,
-                ctaText:'Davor Minchorov'
-            },
-                 { 
-                imgSrc:'{{asset('/images/daniel-albert.jpg')}}',
-                imgAlt:'Daniel',
-                title:'Cloud Infrastructure Engineer',
-                description: `
-           Develop and manage scalable, secure, and efficient cloud-based systems. Implement best practices for cloud architecture, automation, and performance monitoring to support business growth. Collaborate with developers and stakeholders to ensure seamless integration and reliability.
-          
-        `,
-                ctaText:'Daniel Albert'
-            },
-                 { 
-                imgSrc:'{{asset('/images/anwiti-mirsa.jpg')}}',
-                imgAlt:'Anwiti',
-                title:'Senior Innovative Solutions Developer',
-                description: `
-           Build and maintain end-to-end web applications, from frontend interfaces to backend logic and database design. Ensure responsive and user-friendly designs while optimizing performance and scalability. Collaborate with design and product teams to deliver robust solutions.
-           
-        `,
-                ctaText:'Anwiti Mirsa'
-            }           
-            ],            
-            currentSlideIndex: 1,
-            previous() {                
-                if (this.currentSlideIndex > 1) {                    
-                    this.currentSlideIndex = this.currentSlideIndex - 1                
-                } else {   
-                    // If it's the first slide, go to the last slide           
-                    this.currentSlideIndex = this.slides.length                
-                }            
-            },            
-            next() {                
-                if (this.currentSlideIndex < this.slides.length) {                    
-                    this.currentSlideIndex = this.currentSlideIndex + 1                
-                } else {                 
-                    // If it's the last slide, go to the first slide    
-                    this.currentSlideIndex = 1                
-                }            
-            },        
-        }" class="space-y-10 relative h-[100vh] ">
-        <template x-for="(slide, index) in slides">
-            <!-- absolute inset-0 -->
-            <div class="w-full  w-sm:w-[90%] md:w-[50%] h-[400px] absolute top-0 rounded-lg  shadow-even mx-auto p-10    inset-0 " x-cloak x-show="currentSlideIndex == index + 1" x-transition.opacity.duration.1000ms>
-                <img src="{{asset('/images/quote-svgrepo-com.svg')}}" alt="Quotation mark" class="w-10 h-10">
-                <div class="space-y-4 text-xl">
-                    <p x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'">
-
-                    </p>
-                    <div class=" flex items-center space-x-4">
-                        <img x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" class="w-16 h-16 rounded-[50%]">
-                        <div class="flex flex-col">
-                            <span class="font-bold" x-text="slide.ctaText"></span>
-                            <span class="text-sm" x-text="slide.title" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"></span>
-                        </div>
+    <div class="space-y-10">
+        <div class="full  w-sm:w-[90%] md:w-[50%] min-h-[50%] rounded-lg shadow-even mx-auto p-16 flex space-x-4">
+            <img src="{{asset('/images/quote-svgrepo-com.svg')}}" alt="Quotation mark" class="w-10 h-10">
+            <div class="space-y-4 text-xl">
+                <p>
+                    Joining Adeva completely changed the way I manage my work and life. It gave me the opportunity to
+                    work
+                    remotely for worldwide projects while keeping a very healthy work-life balance. I get to connect
+                    with
+                    proactive and interesting people, always eager to learn and improve which really makes me feel
+                    integrated into a supportive community.
+                </p>
+                <p>It's definitely one of my most cherished and empowering job experiences so far!</p>
+                <div class="flex items-center space-x-4">
+                    <img src="{{asset('/images/rita-viegas.jpg')}}" alt="Rita" class="w-16 h-16 rounded-[50%]">
+                    <div class="flex flex-col">
+                        <span class="font-bold">Rita Viegas</span>
+                        <span class="text-sm">Senior BI Engineer</span>
                     </div>
                 </div>
             </div>
-        </template>
-
+        </div>
         <section
-            class="bg-blue-900/90 min-h-[30vh] flex flex-col-reverse md:flex-row items-center md:items-start reveal-on-scroll absolute bottom-0 w-full">
-            <div class="text-center my-auto w-[80%] ">
+            class="bg-blue-900/90 min-h-[30vh] flex flex-col-reverse md:flex-row items-center md:items-start reveal-on-scroll">
+            <div class="text-center my-auto w-[80%]">
                 <h1 class="text-4xl text-white font-bold">Ready to change the world?</h1>
             </div>
             <div class="flex  flex-col items-center md:space-y-8 md:px-4 md:w-[50%]">
                 <div class="flex items-center space-x-4">
-                    <button class="text-4xl text-[#333] text-white" aria-label="previous slide" x-on:click="previous()">
+                    <button class="text-4xl text-[#333]">
                         &#10229;
                     </button>
-                    <button class="text-4xl text-[#333] text-white" aria-label="next slide" x-on:click="next()">
+                    <button class="text-4xl text-[#333]">
                         &#10230;</button>
                 </div>
                 <div class="space-x-4  ">
@@ -296,5 +208,4 @@ $cards = [
                 </div>
             </div>
         </section>
-    </div>
 </x-app-layout>
