@@ -54,12 +54,45 @@ $cards = [
             </div>
         </div>
     </section>
-    <x-product-layout>
-        <div
-            class="space-x-8 space-y-16 flex flex-col-reverse items-center pt-16 md:grid md:grid-cols-2  lg:w-[80%] lg:mx-auto pr-6 gap-4 md:items-center">
+    <section class="bg-svg-bg-image bg-no-repeat bg-[200%] bg-bottom bg-blend-darken bg-white  min-h-[80vh] bg-blue-100/10" x-data="{ selectedTab: 'groups' }">
+        <div class="flex flex-col  py-16 space-y-8">
+            <h1 class="text-4xl font-bold w-[80%] mx-auto">Pay global contractors without setting up local entities</h1>
+            <nav class="hidden lg:flex w-[80%] mx-auto">
+                <div class="flex gap-16 justify-between  w-[60%]  border-b-[2px] text-2xl text-green-500" @keydown.right.prevent="$focus.wrap().next()" @keydown.left.prevent="$focus.wrap().previous()">
+                    <button @click="selectedTab = 'groups'" :aria-selected="selectedTab === 'groups'" :tabindex="selectedTab === 'groups' ? '0' : '-1'" :class="selectedTab === 'groups' ? 'font-bold text-black border-b-2 border-black   : 'text-neutral-600 font-medium  white hover:border-b-2 hover:border-b-neutral-800 hover:text-neutral-900'" class="pb-4 border-b-[4px] border-b-green-500" @click="selectedTab = 'groups'" :aria-selected="selectedTab === 'groups'" :tabindex="selectedTab === 'groups' ? '0' : '-1'" type="button" role="tab" aria-controls="tabpanelGroups">Easy</button>
+                    <button @click="selectedTab = 'flexible'" :aria-selected="selectedTab === 'flexible'" :tabindex="selectedTab === 'flexible' ? '0' : '-1'" class="pb-4 border-b-[2px] border-b-green-200" type="button" role="tab" aria-controls="tabpanelFlexible">Flexible</button>
+                    <button @click="selectedTab = 'reliable'" :aria-selected="selectedTab === 'reliable'" :tabindex="selectedTab === 'reliable' ? '0' : '-1'" class="pb-4 border-b-[2px] border-b-green-200" type="button" role="tab" aria-controls="tabpanelReliable">Reliable</button>
+                    <button @click="selectedTab = 'complaint'" :aria-selected="selectedTab === 'complaint'" :tabindex="selectedTab === 'complaint' ? '0' : '-1'" class="pb-4 border-b-[2px] border-b-green-200" type="button" role="tab" aria-controls="tabpanelComplaint">Complaint</button>
+                    <button @click="selectedTab = 'low_risk'" :aria-selected="selectedTab === 'low_risk'" :tabindex="selectedTab === 'low_risk' ? '0' : '-1'" class="pb-4 border-b-[2px] border-b-green-200" type="button" role="tab" aria-controls="tabpanelLowRisk">Low Risk</button>
+                </div>
+            </nav>
 
+            <!-- Mobile view -->
+            <div class="lg:hidden">
+                <select name="job_title" class="text-sm p-2 rounded-md  outline-none ring-1 ring-gray-400" @keydown.right.prevent="$focus.wrap().next()" @keydown.left.prevent="$focus.wrap().previous()">
+                    <option value="software_engineer">
+                        Easy
+                    </option>
+                    <option value="data_expert">
+                        Flexible
+                    </option>
+                    <option value="product_managers">
+                        Reliable
+                    </option>
+                    <option value="ui-ux_designers">
+                        Complaint
+                    </option>
+                    <option value="data_expert">
+                        Low Risk
+                    </option>
+                </select>
+            </div>
             <div>
-                <!-- <h2 class="text-4xl font-bold text-[#333]/90 max-w-md relative z-10 mb-6">Our vision is to bring equal
+                <div
+                    class="space-x-8 space-y-16 flex flex-col-reverse items-center pt-16 md:grid md:grid-cols-2  lg:w-[80%] lg:mx-auto pr-6 gap-4 md:items-center" x-show="selectedTab === 'groups'" id="tabpanelGroups" role="tabpanel" aria-label="groups">
+
+                    <div>
+                        <!-- <h2 class="text-4xl font-bold text-[#333]/90 max-w-md relative z-10 mb-6">Our vision is to bring equal
                         opportunities to all
                         developers around the world, no matter their
                         location, gender or race.
@@ -68,15 +101,40 @@ $cards = [
                     <div class="w-[80%] h-[55vh] bg-cover bg-right-top hidden md:flex"></div>
                     <img src="{{asset('/images/adeva_our_vision.jpg')}}" alt="ugmc logo" class="hidden md:inline-flex"> -->
 
-                <img src="{{asset('/images/card1.jpeg')}}" alt="" class="rounded-lg shadow-2xl">
+                        <img src="{{asset('/images/card1.jpeg')}}" alt="" class="rounded-lg shadow-2xl">
+                    </div>
+                    <div class="space-y-4 text-xl ">
+                        <h1 class="text-4xl font-bold">Make global payouts easy</h1>
+                        <p class="text-[#333] text-lg ">Use Andela Pay for payouts, compliance, and tax reporting in more than 100 countries. It’s completely turnkey, reducing the cost and
+                            staff required to manage different systems and labor laws.</p>
+                    </div>
+                </div>
             </div>
-            <div class="space-y-4 text-xl ">
-                <h1 class="text-4xl font-bold">Make global payouts easy</h1>
-                <p class="text-[#333] text-lg ">Use Andela Pay for payouts, compliance, and tax reporting in more than 100 countries. It’s completely turnkey, reducing the cost and
-                    staff required to manage different systems and labor laws.</p>
+            <div>
+                <div
+                    class="space-x-8 space-y-16 flex flex-col-reverse items-center pt-16 md:grid md:grid-cols-2  lg:w-[80%] lg:mx-auto pr-6 gap-4 md:items-center" x-show="selectedTab === 'flexible'" id="tabpanelFlexible" role="tabpanel" aria-label="flexible">
+
+                    <div>
+                        <!-- <h2 class="text-4xl font-bold text-[#333]/90 max-w-md relative z-10 mb-6">Our vision is to bring equal
+                        opportunities to all
+                        developers around the world, no matter their
+                        location, gender or race.
+                        <hr class="border-orange-500/80 border-[0.3rem]  w-[80%] absolute -bottom-0 -z-10">
+                    </h2>
+                    <div class="w-[80%] h-[55vh] bg-cover bg-right-top hidden md:flex"></div>
+                    <img src="{{asset('/images/adeva_our_vision.jpg')}}" alt="ugmc logo" class="hidden md:inline-flex"> -->
+
+                        <img src="{{asset('/images/ugmc.jpg')}}" alt="" class="rounded-lg shadow-2xl">
+                    </div>
+                    <div class="space-y-4 text-xl ">
+                        <h1 class="text-4xl font-bold">Make global payouts easy</h1>
+                        <p class="text-[#333] text-lg ">Use Andela Pay for payouts, compliance, and tax reporting in more than 100 countries. It’s completely turnkey, reducing the cost and
+                            staff required to manage different systems and labor laws.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </x-product-layout>
+    </section>
 
     <section class="bg-gray-100/30   min-h-screen pt-8 ">
         <div class="lg:w-[80%] lg:mx-auto flex flex-col items-center space-y-10 pb-24">

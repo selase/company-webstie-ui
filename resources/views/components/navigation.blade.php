@@ -43,7 +43,7 @@
                     <div class=" w-10 h-10 rotate-45 absolute ease-in-out bg-white z-0 left-6 border-[1px]">
                     </div>
                     <div class="relative w-full top-0 rounded-lg bg-white min-h-24 py-4 space-y-4">
-                        <a href="" class="inline-flex hover:bg-gray-100 w-full px-4 py-2 space-x-6">
+                        <a href="{{route('startup-page')}}" class="inline-flex hover:bg-gray-100 w-full px-4 py-2 space-x-6">
                             <img src="{{asset('/images/startups.svg')}}" alt="start up">
                             <div>
                                 <p class="text-black font-bold">Startups</p>
@@ -247,7 +247,7 @@
                     <!-- startup navigations -->
                     <div class="border-b space-y-2 px-4 w-full bg-blue py-4">
                         <div class=" flex justify-end ">
-                            <a href="#"
+                            <a href="{{route('startup-page')}}"
                                 class="hover:rounded-sm hover:bg-black/10 transition-colors duration-300  w-full  block p-1 font-bold text-black/90">
                                 Startups
                             </a>

@@ -176,85 +176,10 @@ $cards = [
         </div>
     </section>
     <!-- <img src="{{asset('/images/quote-svgrepo-com.svg')}}" alt="Quotation mark" class="w-10 h-10"> -->
-    <div x-data="{            
-        slides: [                
-            { 
-                    imgSrc:'{{asset('/images/rita-viegas.jpg')}}',
-                    imgAlt:'Rita',
-                    title:'Senior BI Engineer',
-                 description: `
-            Joining Adeva completely changed the way I manage my work and life.
-            It gave me the opportunity to work remotely for worldwide projects while keeping a very healthy work-life balance.
-            I get to connect with proactive and interesting people, always eager to learn and improve which really makes me feel integrated into a supportive community.
-    
-            It's definitely one of my most cherished and empowering job experiences so far!
-        `,
-                
-                ctaText:'Rita Viegas'
-            }  ,
-                 { 
-                imgSrc:'{{asset('/images/ramy-mousa.jpg')}}',
-                imgAlt:'Ramy',
-                title:'Senior Innovative Solutions Developer',
-                description: `
-            Design and implement cutting-edge technology solutions to solve complex problems, improve user experiences, and drive business success. Collaborate with multidisciplinary teams to create scalable, secure, and innovative applications using the latest tech trends and practices.
-            
-            It's definitely one of my most cherished and empowering job experiences so far!
-        `,
-                ctaText:'Ramy Mousa'
-            } ,
-                 { 
-                imgSrc:'{{asset('/images/davor-minchorov.jpg')}}',
-                imgAlt:'Davor',
-                title:'Data Scientist',
-                description: `
-            Analyze complex datasets to extract insights and inform decision-making. Build predictive models and machine learning algorithms to solve business challenges. Visualize data effectively and communicate findings to technical and non-technical stakeholders.
-            
-        `,
-                ctaText:'Davor Minchorov'
-            },
-                 { 
-                imgSrc:'{{asset('/images/daniel-albert.jpg')}}',
-                imgAlt:'Daniel',
-                title:'Cloud Infrastructure Engineer',
-                description: `
-           Develop and manage scalable, secure, and efficient cloud-based systems. Implement best practices for cloud architecture, automation, and performance monitoring to support business growth. Collaborate with developers and stakeholders to ensure seamless integration and reliability.
-          
-        `,
-                ctaText:'Daniel Albert'
-            },
-                 { 
-                imgSrc:'{{asset('/images/anwiti-mirsa.jpg')}}',
-                imgAlt:'Anwiti',
-                title:'Senior Innovative Solutions Developer',
-                description: `
-           Build and maintain end-to-end web applications, from frontend interfaces to backend logic and database design. Ensure responsive and user-friendly designs while optimizing performance and scalability. Collaborate with design and product teams to deliver robust solutions.
-           
-        `,
-                ctaText:'Anwiti Mirsa'
-            }           
-            ],            
-            currentSlideIndex: 1,
-            previous() {                
-                if (this.currentSlideIndex > 1) {                    
-                    this.currentSlideIndex = this.currentSlideIndex - 1                
-                } else {   
-                    // If it's the first slide, go to the last slide           
-                    this.currentSlideIndex = this.slides.length                
-                }            
-            },            
-            next() {                
-                if (this.currentSlideIndex < this.slides.length) {                    
-                    this.currentSlideIndex = this.currentSlideIndex + 1                
-                } else {                 
-                    // If it's the last slide, go to the first slide    
-                    this.currentSlideIndex = 1                
-                }            
-            },        
-        }" class="space-y-10 relative h-[100vh] ">
+    <div x-data="carouselData()" class="space-y-10 relative h-[100vh] ">
         <template x-for="(slide, index) in slides">
             <!-- absolute inset-0 -->
-            <div class="w-full  w-sm:w-[90%] md:w-[50%] h-[400px] absolute top-0 rounded-lg  shadow-even mx-auto p-10    inset-0 " x-cloak x-show="currentSlideIndex == index + 1" x-transition.opacity.duration.1000ms>
+            <div class="w-full  sm:w-[90%] h-[500px] md:w-[65%] lg:w-[50%] lg:h-[400px] sm:h-[450px]  absolute top-0 rounded-lg  shadow-even mx-auto p-10    inset-0 " x-cloak x-show="currentSlideIndex == index + 1"  x-transition.opacity.duration.1000ms>
                 <img src="{{asset('/images/quote-svgrepo-com.svg')}}" alt="Quotation mark" class="w-10 h-10">
                 <div class="space-y-4 text-xl">
                     <p x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'">
@@ -297,4 +222,75 @@ $cards = [
             </div>
         </section>
     </div>
+    <script>
+        function carouselData() {
+            return {
+                slides: [{
+                        imgSrc: "{{asset('/images/rita-viegas.jpg')}}",
+                        imgAlt: 'Rita',
+                        title: 'Senior BI Engineer',
+                        description: `
+            Joining Adeva completely changed the way I manage my work and life.
+            It gave me the opportunity to work remotely for worldwide projects while keeping a very healthy work-life balance.
+            I get to connect with proactive and interesting people, always eager to learn and improve which really makes me feel integrated into a supportive community.
+    
+            It's definitely one of my most cherished and empowering job experiences so far!
+        `,
+
+                        ctaText: 'Rita Viegas'
+                    },
+                    {
+                        imgSrc: "{{asset('/images/ramy-mousa.jpg')}}",
+                        imgAlt: 'Ramy',
+                        title: 'Senior Innovative Solutions Developer',
+                        description: `
+            Design and implement cutting-edge technology solutions to solve complex problems, improve user experiences, and drive business success. Collaborate with multidisciplinary teams to create scalable, secure, and innovative applications using the latest tech trends and practices.
+            
+            It's definitely one of my most cherished and empowering job experiences so far!
+        `,
+                        ctaText: 'Ramy Mousa'
+                    },
+                    {
+                        imgSrc: "{{asset('/images/davor-minchorov.jpg ')}}",
+                        imgAlt: 'Davor',
+                        title: 'Data Scientist',
+                        description: `
+            Analyze complex datasets to extract insights and inform decision-making. Build predictive models and machine learning algorithms to solve business challenges. Visualize data effectively and communicate findings to technical and non-technical stakeholders.
+            
+        `,
+                        ctaText: 'Davor Minchorov'
+                    },
+                    {
+                        imgSrc: "{{asset('/images/daniel-albert.jpg')}}",
+                        imgAlt: 'Daniel',
+                        title: 'Cloud Infrastructure Engineer',
+                        description: `
+           Develop and manage scalable, secure, and efficient cloud-based systems. Implement best practices for cloud architecture, automation, and performance monitoring to support business growth. Collaborate with developers and stakeholders to ensure seamless integration and reliability.
+          
+        `,
+                        ctaText: 'Daniel Albert'
+                    },
+                    {
+                        imgSrc: "{{asset('/images/anwiti-mirsa.jpg')}}",
+                        imgAlt: 'Anwiti',
+                        title: 'Senior Innovative Solutions Developer',
+                        description: `
+           Build and maintain end-to-end web applications, from frontend interfaces to backend logic and database design. Ensure responsive and user-friendly designs while optimizing performance and scalability. Collaborate with design and product teams to deliver robust solutions.
+           
+        `,
+                        ctaText: 'Anwiti Mirsa'
+                    }
+                ],
+                currentSlideIndex: 1,
+                previous() {
+                    this.currentSlideIndex > 1 ? this.currentSlideIndex = this.currentSlideIndex - 1 : this.currentSlideIndex = this.slides.length
+                },
+                next() {
+                    this.currentSlideIndex < this.slides.length ? this.currentSlideIndex = this.currentSlideIndex + 1 : this.currentSlideIndex = 1
+
+                }
+
+            }
+        }
+    </script>
 </x-app-layout>
